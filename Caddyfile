@@ -1,0 +1,11 @@
+{
+    # Глобальные настройки
+    email tbogolyubovv@ya.ru
+}
+
+localhost {
+    root * /srv
+    file_server
+    tls internal
+    redir https://{host}{uri}
+}
